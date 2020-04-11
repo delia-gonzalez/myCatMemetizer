@@ -1,0 +1,8 @@
+<div class="container">
+      <div class="title">
+            {{title}}!
+      </div>
+      <app-information-input (catSentence)="onCatReception($event)"></app-information-input>
+      <app-image-generator [catUrl]="catUrl" [catSentence]="catSentence" [loading]="loading"></app-image-generator>
+      <app-image-generator [catUrl]="catUrl" [catSentence]="catSentence" [loading]="loading"></app-image-generator>
+</div>

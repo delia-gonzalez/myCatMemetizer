@@ -1,0 +1,9 @@
+<div class="custom-container">
+  <div class="spinner-border" role="status" *ngIf="loading; else elseBlock">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <ng-template #elseBlock>
+    <span class="title">{{ catSentence }}</span>
+    <img [src]="catUrl" class="image" />
+  </ng-template>
+</div>
